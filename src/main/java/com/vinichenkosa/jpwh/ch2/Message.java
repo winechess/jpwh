@@ -1,0 +1,24 @@
+package com.vinichenkosa.jpwh.ch2;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/**
+ * Created by vinichenkosa on 16.01.16.
+ */
+@Entity
+public class Message {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String text;
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+}
